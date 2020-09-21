@@ -11,7 +11,7 @@ const addMarksSchema = new mongoose.Schema({
     },
     userId: [{
         type: Schema.Types.ObjectId, 
-        ref: 'UserRecord'
+        ref: 'userRecord'
     }]
 });
 
