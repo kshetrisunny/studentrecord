@@ -9,10 +9,10 @@ const addMarksSchema = new mongoose.Schema({
     marks: {
         type: String
     },
-    userId: [{
+    userId: {
         type: Schema.Types.ObjectId, 
         ref: 'userRecord'
-    }]
+    }
 });
 
 const AddMarks = module.exports = mongoose.model('addMarks', addMarksSchema);
